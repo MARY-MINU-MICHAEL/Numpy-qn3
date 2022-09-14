@@ -1,0 +1,30 @@
+import numpy as np
+Array1 = np.arange(1,10)
+x=Array1.reshape(3,3)
+print(x)
+Array2 = np.arange(11,20)
+y=Array2.reshape(3,3)
+print(y)
+
+a=x*y
+print('Multiplication')
+print(a)
+
+b=x/y
+print('Division')
+print(b)
+
+c=x+y
+print('Addition')
+print(c)
+
+d=x-y
+print('Subtraction')
+print(d)
+
+Rowsum1=x.sum(axis=1)
+print('Row sum of first array')
+print(Rowsum1)
+Rowsum2=y.sum(axis=1)
+print('Row sum of second array')
+print(Rowsum2)
